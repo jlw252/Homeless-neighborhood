@@ -25,7 +25,7 @@ df['average_crime_rate'] = df[['neighborhood_crime_rate_1973', 'neighborhood_cri
 ranked_df = df.sort_values(by='average_crime_rate')
 
 # Display the result
-print(ranked_df[['neighborhood', 'average_crime_rate']])
+print(ranked_df[['id','neighborhood', 'average_crime_rate']])
 
 
 plt.figure(figsize=(10, 6))
